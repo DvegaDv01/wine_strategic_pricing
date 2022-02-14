@@ -11,12 +11,12 @@ This project on Red wine quality will examine physicochemical inputs to identify
 
 
 ## Data Exploration
-
+![alt text](https://github.com/DvegaDv01/wine_strategic_pricing/tree/main/artifacts/head.png)
 ### Stats
-
+![alt text](https://github.com/DvegaDv01/wine_strategic_pricing/tree/main/artifacts/stats.png)
 ### Normalized Data
-
+![alt text](https://github.com/DvegaDv01/wine_strategic_pricing/tree/main/artifacts/normalized.png)
 ### Info and Dtypes
-
+![alt text](https://github.com/DvegaDv01/wine_strategic_pricing/tree/main/artifacts/info.png)
 ### Data preprocessing, feature engineering, spliting and other preparation
 To make sure the data is ready for training the model we use a Pytorch api (fastai) to wrap our dataset with a dataloader. Once this is done we utilize transforms to fill missing and normalize the data. With only 12 features in the original dataset there will be no feature enginering. All of the features are continous, minus the dependent variable. Data is randomly seperated into a 80/20 split. The model chosen is classification in nature made up of a simple RNN architecture. There are many limitions to this model approach but the most relevant to mention is the use of a descret model (of formed of hidden layers) for continous variables. This limitation should be mentioned with the benefit that neural networks are natural feature extraction tools via hidden layers.
